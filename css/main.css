@@ -39,6 +39,105 @@ html {
 body {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature {
+  margin-top: 8rem;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 950px) {
+  .feature {
+    flex-direction: column;
+    margin-top: 8.5rem;
+  }
+}
+.feature__body {
+  margin-bottom: 6.4rem;
+  max-width: 54rem;
+  color: var(--color-grayish-blue);
+}
+.feature__title {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 200;
+  letter-spacing: 0.025rem;
+}
+@media screen and (max-width: 950px) {
+  .feature__title {
+    font-size: 2.4rem;
+  }
+}
+.feature__title-bold {
+  font-weight: 700;
+  color: #3d3c3c;
+  white-space: pre;
+}
+.feature__text {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.feature .feature-cards {
+  max-width: 111.1rem;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 950px) {
+  .feature .feature-cards {
+    flex-direction: column;
+  }
+}
+.feature .feature-cards__card {
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 3.2rem;
+  flex-basis: 1;
+  width: 100%;
+  margin: 1.5rem;
+  align-self: center;
+  max-width: 35rem;
+  height: 25rem;
+  box-shadow: 0px 1px 8px var(--color-dark-blue);
+  position: relative;
+}
+.feature .feature-cards .card-top-cyan {
+  border-top: 0.5rem solid var(--color-primary-cyan);
+}
+.feature .feature-cards .card-top-red {
+  border-top: 0.5rem solid var(--color-primary-red);
+}
+.feature .feature-cards .card-top-orange {
+  border-top: 0.5rem solid var(--color-primary-orange);
+}
+.feature .feature-cards .card-top-blue {
+  border-top: 0.5rem solid var(--color-primary-blue);
+}
+.feature .feature-cards .feature-card__title {
+  margin-bottom: 0.6rem;
+  font-size: 2rem;
+}
+.feature .feature-cards .feature-card__text {
+  font-size: 1.3rem;
+  color: var(--color-grayish-blue);
+}
+.feature .feature-cards .feature-card__img {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.feature .feature-cards-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
