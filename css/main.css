@@ -15,7 +15,7 @@
   --color-primary-cyan: hsl(180, 62%, 55%);
   --color-primary-orange: hsl(34, 97%, 64%);
   --color-primary-blue: hsl(212, 86%, 64%);
-  --color-dark-blue: hsl(234, 12%, 34%);
+  --color-dark-blue: hsl(234, 12%, 34%, 0.5);
   --color-grayish-blue: hsl(229, 6%, 66%);
   --color-light-gray: hsl(0, 0%, 98%);
 }
@@ -57,6 +57,7 @@ body {
   .feature {
     flex-direction: column;
     margin-top: 8.5rem;
+    min-width: 80vw;
   }
 }
 .feature__body {
@@ -79,6 +80,11 @@ body {
   font-weight: 700;
   color: #3d3c3c;
   white-space: pre;
+}
+@media screen and (max-width: 950px) {
+  .feature__title-bold {
+    white-space: normal;
+  }
 }
 .feature__text {
   margin-top: 0.5rem;
@@ -106,7 +112,7 @@ body {
   align-self: center;
   max-width: 35rem;
   height: 25rem;
-  box-shadow: 0px 1px 8px var(--color-dark-blue);
+  box-shadow: 0px 5px 5px 1px var(--color-dark-blue);
   position: relative;
 }
 .feature .feature-cards .card-top-cyan {
