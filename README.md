@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL here](https://github.com/ttakeyaya/four-card-feature)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here](https://ttakeyaya.github.io/four-card-feature/)
 
 ## My process
 
